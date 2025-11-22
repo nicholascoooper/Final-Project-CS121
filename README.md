@@ -21,10 +21,10 @@ The project is intended to be used by those who wish to experience a simple text
 
 
 ###Use of Object-Oriented Programming Paradigms
-Inheritance - River and Forest inherit Location
-Polymorphism = River and Forest have different attributes but derive from Location
-Encapsulation - Game class
-Aggregation  - locations, events, inventory, lootTable
+Inheritance - River and Forest inherit Location\
+Polymorphism = River and Forest have different attributes but derive from Location\
+Encapsulation - Game class\
+Aggregation  - locations, events, inventory, lootTable\
 Composition - player, currentLocation
  
 ###GUI Example
@@ -35,67 +35,67 @@ What would you like to do?\
 3)Rest\
 4)Check Status\
 5)Eat\
-6)Quit\
+6)Quit
 
 1
 
-You explore and find a forest what would you like to do?
-1)Explore
-2)Forage
-3)Rest
-4)Check Status
-5)Eat
+You explore and find a forest what would you like to do?\
+1)Explore\
+2)Forage\
+3)Rest\
+4)Check Status\
+5)Eat\
 6)Quit
 
 2
 
-You found a berry! Added berry to your inventory.
-What would you like to do?
-1)Explore
-2)forage
-3)rest
-4)check status
-5)Eat
+You found a berry! Added berry to your inventory.\
+What would you like to do?\
+1)Explore\
+2)forage\
+3)rest\
+4)check status\
+5)Eat\
 6)Quit
 
 3
 
-You rested and healed 3 hp and increased 2 hunger.
-What would you like to do?
-1)explore
-2)forage
-3)rest
-4)check status
-5)eat
+You rested and healed 3 hp and increased 2 hunger.\
+What would you like to do?\
+1)explore\
+2)forage\
+3)rest\
+4)check status\
+5)eat\
 6)quit
 
 4
 
-You have 9/10 hp and 5/10 hunger.
-You are currently at the forest.
-Inventory: berry
-what would you like to do?
-1)explore
-2)forage
-3)rest
-4)check status
-5)eat
+You have 9/10 hp and 5/10 hunger.\
+You are currently at the forest.\
+Inventory: berry\
+what would you like to do?\
+1)explore\
+2)forage\
+3)rest\
+4)check status\
+5)eat\
 6)quit
 
 5
 
-Inventory: berry
+Inventory: berry\
 What do you want to eat
 
 berry
 
-Your hunger decreased by 2
-What do you want to do?
-1)explore
-2)forage
-3)rest
-4)check status
-5)eat
+Your hunger decreased by 2\
+What do you want to do?\
+1)explore\
+2)forage\
+3)rest\
+4)check status\
+5)eat\
 6)quit
 
 6
