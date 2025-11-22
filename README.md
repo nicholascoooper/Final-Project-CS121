@@ -65,12 +65,22 @@ classDiagram
     class Location{
         -name: String
         -description: String
-        -lootTable: ArrayList<Item>
+        #lootTable: ArrayList<Item>
         +getName(): String
         +getDescription(): String
         +getLootTable(): ArrayList<Item>
-        +forage(): void
+        +forage(): Item
         +printLocationInfo(): void
+    }
+
+    class River{
+        +river()
+        +forage(): Item
+    }
+
+    class Forest{
+        +forest()
+        +forage(): Item
     }
 
     class Event{
@@ -102,14 +112,7 @@ classDiagram
         +startGame(): void
     }
 
-```
+River<|--Location
+Forest<|--Location
 
-#Player
-=============
-
-
-
-============
-
-
-    
+```    
