@@ -29,13 +29,13 @@ Composition - player, currentLocation
  
 ###GUI Example
 
-What would you like to do?
-1)Explore
-2)Forage
-3)Rest
-4)Check Status
-5)Eat
-6)Quit
+What would you like to do?\
+1)Explore\
+2)Forage\
+3)Rest\
+4)Check Status\
+5)Eat\
+6)Quit\
 
 1
 
