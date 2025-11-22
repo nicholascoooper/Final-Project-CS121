@@ -20,47 +20,37 @@ classDiagram
     
     class Player{
         -hp: int
-        -stamina: int
-`        -woodCount: int
-        -meatCount: int
-        +Player()
+        -hunger: int
+`       -inventory: ArrayList<Item>
+        -currentLoctaion: Location
+        +takeDamage(): void
+        +increaseHunger(): void
     }
 
-    class HasMenu{
-        <<interface>>
-        +menu(): String
-        +start() void
+    class Item{
+        -name: String
+        -type: String
+        -value: int
     }
 
-    class Tree{
-        -hp: int
-        +getWood(): String
+    class Location{
+        -name: String
+        -description: String
+        -lootTable: ArrayList<Item>
     }
 
-    class Animal{
-        -hp: int
-        +defeat(): String
+    class Event{
+        -name: String
+        -descritption: String
+        -healthChange: int
+        -hungerChange: int
     }
 
-    class Forest{
-        +menu(): void
-        +start(): void
-        +main(): void
-        +findWood(): String
-        +findAnimal(): String
+    class Game{
+        -player Player
+        -locations: ArrayList<Location>
+        -events: ArrayList<Event>
     }
-
-    class CampFire{
-        -hp: int
-        +menu(): void
-        +start(): void
-        +main(): void
-        +addWood(): String
-        +cookFood() String
-    }
-
-HasMenu <.. Forest
-HasMenu <.. Campfire
 
 ```
 
