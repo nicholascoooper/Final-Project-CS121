@@ -203,3 +203,130 @@ Forest<|--Location
 -Event\
 -Game
 
+
+Algorithm summary of all non-obvious methods
+
+Item.java:
+public Item(name, type, value){
+  this.name
+  this.type
+  this.value
+}
+
+
+Location.java:
+public Location(name, description)[
+  this.name
+  this.description
+  lootTable = arrayList
+}
+
+River.java:
+public River(){
+  super(river, flowing water)
+  lootTable.add(new items)
+}
+
+
+Forest.java:
+public Forest(){
+  super(forest, deep forest)
+  lootTable.add(new items)
+}
+
+
+Player.java:
+public void eat(){
+ for(Item i  : inventory){
+   if(i.getName.equalsignoreCase(name) && i.getType().equals(food || drink){
+    increaseHunger(i.getValue)
+    print consumed i
+    removeItem(i)
+   print(you dont have that or cant be eaten)
+}
+
+Event.java:
+public Event(name, description, healthChange, hungerChange){
+  this.name 
+  this.description 
+  this.healthChange
+  this.hungerChange
+}
+
+public void trigger(){
+  print(Name: name
+  print(description)
+  player.takeDamage
+  player.decreaseHunger
+}
+
+Game.java:
+public Game(){
+  player = new Player
+  locations =new arrayList
+  events = new arrayList
+  day = 1
+  scanner = new scanner
+  locations.add (Forest() && River())
+  events.add(animal attack, animal attacks, -2, 0)
+}
+
+public void Gameloop(){
+  while(player.getHealth > 0 && player.hetHunger > 0){
+    print(day: day)
+    displayMenu()
+    choice = getInt()
+    if choice = 1
+      explore()
+    else = 2
+       forage()
+    else = 3
+       rest()
+    else = 4
+       player.printStatus()
+    else = 5
+       eat
+    else = 6
+       quitGame()
+    else
+       print (not valid selection)
+    randomEventChance()
+    day++
+  print(you have died)
+}
+
+private void explore(){
+  rand = new Random()
+  Locations newloc = locations.get(rand)
+  player.setCurrentLocation(newloc)
+  print(youre now at newloc)
+}
+
+private void forage(){
+  loc = player.getCurrentLocation
+  item =loc.forage()
+  player.addItem(item)
+  print(you found a item)
+  player.decreaseHunger
+}
+
+private void rest(){
+  player.heal(2)
+  player.decreaseHunger(2)
+  print (you heal for 2 and get 2 hungier)
+
+priavte void eat(){
+  print (inventory)
+  print(what would you likt to eat)
+  food = scanner
+  player.eat(food)
+}
+
+private void randomEventChance(){
+  rand = new Random()
+  if rand < 25
+    Event e = events.get(randdom event)
+    e.trigger
+}
+
+
